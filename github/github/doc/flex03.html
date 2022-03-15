@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex02</title>
+    <style>
+
+        @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+        @import url(https://fonts.google.com/noto/specimen/Noto+Sans+KR);
+        @import url(https://fonts.google.com/noto/specimen/Noto+Serif+KR?subset=korean);
+
+        *{margin: 0; padding: 0; box-sizing: border-box; background-color: #333;}
+        ul{list-style: none;}
+         a{color: inherit; text-decoration: none; }
+         .topBanner{background:#333; color: #fff; font-size: 15px; padding: 5px 15px;}
+         .topBanner .inner {display:flex; justify-content: space-between; width:1200px;  margin: 0 auto;}
+         .topBanner ul {display:flex;}
+         .topBanner .left li {margin-right: 30px; }
+         .topBanner .right {gap: 30px; }
+         .topBanner .right li {position: relative;}
+         .topBanner .right li~li::before {content: ""; display: block; padding: 5px 15px; height: 12px; background: #333; position: absolute; top: 50%; left: -15px; transform: translate(-50%);}
+         .container {border-top: 1px solid rgba(255 255 255 0.5);border-bottom: 1px solid rgba(255 255 255 0.5)}
+         .container ul{display: flex; justify-content: center; gap: 40px; width: 1200px; margin: 0 auto; line-height: 50px; color: #fff;}
+         .mainVisual {height:100vh; background:url(../img/main_slider_n01.jpg) no-repeat center center cover;}
+         .body{font-family: "noto sans kr", sans-serif; background: #333;}
+         .headerWrap {position:relative; }
+
+
+
+</style>
+</head>
+<body>
+ <div class="Wrap">
+<header class="headerWrap">
+   <div class="topBanner">
+      <div class="inner">
+           
+          <ul class="left">
+             <li><a href="#!"><i class="xi-chip-o"></i> KOR</a></li>
+             <li><a href="#!">STORE</a></li>
+          </ul>
+         <ul class="right">
+            <li><a href="#!">어쩌구</a></li>
+            <li><a href="#!">저쩌구</a></li>
+            <li><a href="#!">뷁</a></li>
+         </ul>
+    </div>
+
+   </div>
+   <h1>
+   <a href="#!"><img src="../img/logo.png" alt=""></a> </h1>
+   <nav class="container">
+      <ul >
+         <li><a href="#!">빨강</a></li>
+         <li><a href="#!">주황</a></li>
+         <li><a href="#!">노랑</a></li>
+         <li><a href="#!">초록</a></li>
+         <li><a href="#!">파랑</a></li>
+         <li><a href="#!">남색</a></li>
+         <li><a href="#!">보라</a></li>
+      </ul>
+   </nav>
+</header>
+
+<main>
+   <section class="mainVisual">
+
+   </section>
+</main>
+
+<footer class="footerWrap"></footer>
+
+
+</div>
+
+</body>
+
+</html>

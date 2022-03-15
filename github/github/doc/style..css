@@ -1,0 +1,45 @@
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.sc01 {
+    padding: 100px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.sc01 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sc01>p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.sc01 .container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.sc01 .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sc01 figure {
+    float: left;
+    width: 33.333333333%;
+    padding: 0 15px
+}
+
+
+.sc01 figure img {
+    width: 100%;
+    margin-bottom: 20px;
+}
