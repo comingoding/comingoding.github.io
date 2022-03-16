@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display01-디스플레이에대해 알아보자.</title>
+</head>
+<style>
+            @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .none {
+        display: none;
+       
+    }
+
+    @media(max-width:1000px) {
+        .none {
+            display: block;
+            font-size: 0;
+            text-align: center;
+        }
+
+        i {
+            position: fixed;
+            top: 20px;
+            right: 50px;
+            left: -350px;
+            font-size: 30px;
+            padding: 10px;
+            background: yellow;
+        }
+        nav a {color:#fff;}
+    }
+</style>
+
+<body>
+    <div class="none">
+    <i class="xi-bars"></i>
+    <i class="xi-bars"></i>
+    <i class="xi-bars"></i></div>
+
+
+        <div class="mopen">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+</body>
+
+</html>
