@@ -5,7 +5,8 @@
 .tabmenu .tabLink {display: flex; }
 .tabmenu .tabLink>li {flex:1; }
 .tabmenu .tabLink .active{ color: red;}
-i { transform: translateX(2118px);}
+i { transform: translateX(1800
+   px);}
 
 .tabmenu .tabContent>div {display: none;}
 .tabmenu .tabContent>div .active {display: block; }
