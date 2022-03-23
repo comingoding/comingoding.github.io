@@ -134,7 +134,7 @@
 
 .mainVisual .visualSlide figure {
     position: relative;
-    height: 800px;
+    height: 1000px;
 }
 
 .mainVisual .visualSlide figure i {
@@ -284,9 +284,10 @@
 
 .mainProduct h2 {
     font-size: 23px ;
-    font-weight: 100;
+    font-weight: 700;
     letter-spacing: 0.20em;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 .mainProduct p {
@@ -550,8 +551,8 @@
     height: 1200px;
     padding: 100px 0;
     background: #333;
-    filter: grayscale(1);
-    /*백그라운드 갈색??*/
+
+
 
     color: #fff;
     text-align: center;
@@ -761,8 +762,8 @@ transform: translate(-50%  , -50%);
 }
 .customerArea {padding-top: 60px;}
 
+ 
 
 
-
-
+.customerArea .aaaaa {padding: 10px 0;}
 .customerArea .aaaaa img {width: 95%; height:80%; transform: translateX(10px); }

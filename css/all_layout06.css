@@ -1,8 +1,8 @@
-/**/
 
 .topBanner{
     padding: 24px 0;
     background: #f3f3f3;
+    
 }
 
 .topBanner .container{
@@ -10,13 +10,15 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    text-align: center;
 }
 
 .topBanner h2{
     font-size: 24px;
     font-weight: 100;
     letter-spacing: 0.040em;    
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
 }
 
 .topBanner p{
@@ -24,6 +26,7 @@
     font-weight: 300;
     letter-spacing: -0.025em;    
     margin-bottom: 10px;
+
 }
 
 .topBanner a{
@@ -56,6 +59,11 @@
     width: 1200px;
     margin: 0 auto;
     line-height: 100px;
+}
+
+
+.headerWrap .container img {
+    width: 100px;
 }
 
 .headerWrap .container h1{
@@ -142,7 +150,7 @@
     font-size: 100px;
     color: #f00;
     opacity: 0;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .mainVisual .visualSlide figure.oo i {
@@ -150,13 +158,6 @@
     animation: heart 1s infinite;
 }
 
-@keyframes heart {
-    0% {transform: scale(1);}
-    20% {transform: scale(0.5);}
-    50% {transform: scale(1);}
-    70% {transform: scale(0.5);}
-    100% {transform: scale(1);}
-}
 
 .mainVisual .visualSlide .msLeft {
     position: absolute;
@@ -553,7 +554,7 @@
 }
 
 .movieBg{
-    height:1200px;
+    height: 500px;
     padding: 100px 0;
     background: #333;
     filter: grayscale(1); /*백그라운드 갈색??*/
@@ -627,9 +628,9 @@
     top: 10px;
     right: 100px;
     font-size: 50px;
-    color: #aaaaaa;
-
-    transition: 10s;
+    color: #f00;
+    opacity: 0.1;
+    transition: 0.5s;
 }
 
 .customerArea .container>div:hover i{
@@ -667,7 +668,7 @@
     padding: 8px 3px;
     border-bottom: 2px dotted rgb(153, 222, 240);
 }
-/*오버텍스트 ... 표시*/
+
 .customerArea .tabContent strong{
     display: block;
     width: 400px;
@@ -676,13 +677,110 @@
     overflow: hidden;
 }
 
-.footerWrap{
-    height: 150px;
-    background: #333;
+
+.footerWrap {
+    background:#333;
+    color:#f2f2f2;
+    line-height: 60px;
 }
 
-.footerWrap .footertop{
-    width: 1200px;
-    height: 50px;
-    margin: 0 auto;
+.footerWrap .top {
+    border-bottom: 1px solid #666;
+}
+
+.footerWrap .container {
+    display:flex;
+    justify-content: space-between;
+    width:1200px;
+    margin:0 auto;
+}
+
+.footerWrap .container>dl {
+
+    display: flex;
+    padding:0 15px;
+    gap:40px;
+}
+
+.footerWrap .container dd {
+    position: relative;
+}
+
+.footerWrap .container dd:before {
+    content:"";
+
+    position:absolute;
+    top:50%;
+    left:-20px;
+    display:block;
+    width:1px;
+    height:13px;
+    background:#f2f2f2;
+
+    transform: translateY(-50%);
+}
+
+.footerWrap .container>div {
+    padding:0 15px;
+    font-size: 20px;
+}
+
+.footerWrap .bottom {
+    padding-bottom: 30px;
+}
+
+.footerWrap .container>* {
+    padding:0 15px;
+}
+
+.footerWrap .link select {
+    background:#333;
+    font-size: 14px;
+    padding:4px 10px;
+    outline: none;
+    border:none;
+    border:2px solid #f2f2f2;
+}
+
+
+.popup01 {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%,-50%);
+    border:1px solid #ddd;
+    padding:30px;
+    background:rgba(0,0,0,0.5);
+}
+
+.popup01 img {
+    width:400px;
+}
+
+.popup01 button {
+    position:absolute;
+    inset: auto 20px 20px auto;
+    width:100px;
+    height:30px;
+    outline: none;
+    border:1px solid #333;
+    background: #f00;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.toTop {
+    position:fixed;
+    inset:auto 50px 100px auto;
+    display:none;
+    background: transparent;
+    border:none;
+    cursor: pointer;
+}
+
+.toTop i {
+    padding:10px;;
+    background: #333;
+    color:#fff;
+    font-size:20px;
 }
