@@ -554,7 +554,7 @@
 }
 
 .movieBg{
-    height: 500px;
+    height: 800px;
     padding: 100px 0;
     background: #333;
     filter: grayscale(1); /*백그라운드 갈색??*/
