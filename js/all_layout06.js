@@ -18,7 +18,7 @@ $(function () {
     });
 
 
-    // 슬라이드에 애니메이션
+    // 슬라이드에 애니메이션...
     $('.visualSlide figure').eq(1).addClass('oo');
     $('.visualSlide').on('afterChange', function (e, s, c) {
         $('.visualSlide figure').eq(c + 1).addClass('oo').siblings().removeClass('oo');
@@ -55,6 +55,7 @@ $(function () {
         centerMode: true,
         autoplay: true,
         autoplaySpeed: 1000,
+        focusOnSelect: true, /*이미지 선택시 해당이미지로 이동*/
     });
 
     $('.allProduct i:first-child').on('click', function () {
@@ -66,9 +67,8 @@ $(function () {
     });
 
     //ytplayer
-
     $("#bgndVideo").YTPlayer({
-        videoURL: 'Jh4QFaPmdss',
+        videoURL: 'https://youtu.be/Jh4QFaPmdss',
         containment: '.movieBg',
         autoPlay: true,
         mute: true,
@@ -93,6 +93,35 @@ $(function () {
     });
 
 
+    $('.link select').on('change', function () {
+        let linkSite = $(this).val();
+        if (!linkSite) return;
+        window.open(linkSite)
+    });
 
-    //////////console.log('play')///////////////////////
+
+    $('.popup01 button').on('click', function () {
+        $(this).parent().hide();
+    });
+    $('.toTop').on('click', function(){
+        $('html, body').animate({
+            scrollTop:0
+        }, 500);
+        return false;
+    });
+
+
+
+    $(window).on('scroll', function(){
+        let sct = $(window) .scrollTop();
+        console.log(sct);
+        if (sct>500) {
+            $('.toTop') .fadeIn(1000);
+        }        else {
+            $('.toTop') .fadeout(1000);
+        }
+    })
+
+
+    //////////console.log('play')////////////////////////
 })
